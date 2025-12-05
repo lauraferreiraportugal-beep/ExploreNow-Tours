@@ -1,0 +1,462 @@
+/* Base styles */
+:root {
+  --primary-color: #3f6790;
+  --secondary-color: #7fa5c4ea;
+  --neutral-color: #f5f5f5;
+  --text-color: #333;
+  --font-family: 'Arial', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--neutral-color);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+
+/* parte 2*/
+
+
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--secondary-color);
+  color: white;
+  padding: 2rem;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  padding: 1rem;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #004999;
+}
+
+.hero-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* HIGHLIGHT TOURS */
+.highlight-tours {
+  padding: 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.tours-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.tour-card {
+  background: var(--neutral-color);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tour-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.tour-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+
+
+/*   parte 3 */
+
+/* ABOUT SECTIONS – all four aligned the same on desktop */
+.about-hero,
+.mission,
+.team,
+.extra-info {
+  max-width: 960px;      /* largura igual para todas */
+  margin: 0 auto 1rem;   /* centra o bloco na página */
+  padding: 2rem;
+  background: #fff;
+}
+
+
+.about-hero h1, .mission h2, .team h2, .extra-info h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* TABLE */
+.team table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.team th, .team td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.team th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+
+/*  PARTE 4 */
+
+/* TOURS HERO */
+.tours-hero {
+  padding: 2rem;
+  background: var(--neutral-color);
+  text-align: center;
+}
+
+.tours-hero h1 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* PHOTO GALLERY */
+.photo-gallery {
+  padding: 2rem;
+  background: var(--neutral-color);
+}
+
+.photo-gallery h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Cada item da gallery agora é um card com nome + descrição */
+.gallery-item {
+  background-color: var(--tour-bg-color);
+  color: #7fa5c4ea;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-item h3 {
+  margin-bottom: 0.5rem;
+}
+
+.gallery-item p {
+  font-size: 0.9rem;
+}
+
+/* Efeito hover */
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+/*PARTE 5*/
+
+/* Booking / Confirmation */
+.booking-hero {
+  text-align: center;
+  padding: 1.6rem;
+  background: #fff;
+}
+
+.booking-form {
+  max-width: 720px;
+  margin: 1.6rem auto;
+  padding: 1.2rem;
+  background: var(--neutral-color);
+  border-radius: 10px;
+}
+
+.booking-form label { display:block; margin-top:0.6rem; font-weight:600; }
+.booking-form input, .booking-form select, .booking-form textarea {
+  width:100%; padding:0.7rem; border-radius:6px; border:1px solid #dcdcdc;
+}
+
+.form-actions { margin-top:0.8rem; display:flex; gap:0.6rem; }
+
+.confirmation {
+  display:none;
+  max-width:700px;
+  margin:1.6rem auto;
+  background:#fff;
+  padding:1.4rem;
+  border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.04);
+  text-align:center;
+}
+
+.confirmation h2 { color:var(--primary-color); margin-bottom:0.4rem; }
+.confirmation p { color:var(--text-color); line-height:1.5; }
+
+.btn.secondary {
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.6rem 1rem;
+  border-radius:6px;
+  cursor:pointer;
+  text-decoration:none;
+}
+
+
+
+
+
+/*PARTE 6*/
+
+
+/* ---------- FAQ Page ---------- */
+.faq {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: var(--neutral-color);
+  border-radius: 10px;
+}
+
+.faq h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.faq-item {
+  margin-bottom: 1.2rem;
+  padding: 0.8rem;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.faq-item h3 {
+  margin-bottom: 0.4rem;
+  color: var(--secondary-color);
+}
+
+.faq-item p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ---------- Ask a Question Form ---------- */
+.ask-question {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 1.4rem;
+  background: var(--neutral-color);
+  border-radius: 10px;
+}
+
+.ask-question h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.ask-question p { text-align: center; margin-bottom: 1rem; }
+
+.ask-question label { display:block; margin-top:0.6rem; font-weight:600; }
+.ask-question input, .ask-question textarea {
+  width:100%; padding:0.7rem; border-radius:6px; border:1px solid #dcdcdc;
+}
+
+.ask-question .form-actions { margin-top:0.8rem; display:flex; gap:0.6rem; }
+
+#question-confirmation {
+  display:none;
+  text-align:center;
+  padding:1.2rem;
+  background:#fff;
+  border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+#question-confirmation blockquote {
+  background:#f7f7f7;
+  border-left: 4px solid var(--primary-color);
+  padding:0.6rem 1rem;
+  margin:0.8rem 0;
+  font-style:italic;
+}
+
+/* botão secundário  */
+.btn.secondary {
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.6rem 1rem;
+  border-radius:6px;
+  cursor:pointer;
+  text-decoration:none;
+}
+
+
+
+
+/* Meter o header alinhado em pc e telemóvel */
+@media (max-width: 768px) {
+
+  /* Header: logo em cima, menu em coluna */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  /* Hero: texto e imagem um por baixo do outro */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding: 1rem 0;
+  }
+
+  .hero-image {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  /* Grids em coluna no telemóvel */
+  .tours-grid,
+  .gallery-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Blocos centrais com largura total no mobile */
+  .about-hero,
+  .mission,
+  .team,
+  .extra-info,
+  .booking-hero,
+  .booking-form,
+  .faq,
+  .ask-question {
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+}
